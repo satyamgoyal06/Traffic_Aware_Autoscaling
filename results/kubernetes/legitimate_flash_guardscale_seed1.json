@@ -1,0 +1,14 @@
+{
+  "scenario": "legitimate_flash",
+  "seed": 1,
+  "policy": "guardscale",
+  "duration_seconds": 180,
+  "requests_sent": 20548,
+  "http_errors": 0,
+  "error_rate_pct": 0.0,
+  "scale_actions": 5,
+  "mean_p95_latency_ms": 6.38,
+  "evidence_type": "local_kubernetes_measurement",
+  "traffic_source": "synthetic_trace",
+  "rows_csv": "results/kubernetes/legitimate_flash_guardscale_seed1.csv"
+}

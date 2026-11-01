@@ -1,0 +1,55 @@
+{
+  "evidence_type": "local_kubernetes_measurement",
+  "traffic_source": "synthetic_trace",
+  "seed_count": 1,
+  "runs": [
+    {
+      "policy": "guardscale",
+      "seed": 1,
+      "scenario": "legitimate_flash",
+      "windows": 180,
+      "requests": 20548,
+      "http_errors": 0,
+      "trace_target_replica_seconds": 562,
+      "mean_ready_replicas": 3.094,
+      "mean_window_p95_ms": 15.881,
+      "median_window_p95_ms": 11.08,
+      "max_window_p95_ms": 1067.575,
+      "windows_above_2s_p95": 0,
+      "scale_actions": 5,
+      "csv": "legitimate_flash_guardscale_cpu12k_seed1.csv"
+    },
+    {
+      "policy": "predictive",
+      "seed": 1,
+      "scenario": "legitimate_flash",
+      "windows": 180,
+      "requests": 20548,
+      "http_errors": 0,
+      "trace_target_replica_seconds": 474,
+      "mean_ready_replicas": 2.594,
+      "mean_window_p95_ms": 11.513,
+      "median_window_p95_ms": 11.593,
+      "max_window_p95_ms": 143.351,
+      "windows_above_2s_p95": 0,
+      "scale_actions": 15,
+      "csv": "legitimate_flash_predictive_seed1.csv"
+    },
+    {
+      "policy": "reactive",
+      "seed": 1,
+      "scenario": "legitimate_flash",
+      "windows": 180,
+      "requests": 20548,
+      "http_errors": 0,
+      "trace_target_replica_seconds": 446,
+      "mean_ready_replicas": 2.389,
+      "mean_window_p95_ms": 10.845,
+      "median_window_p95_ms": 11.82,
+      "max_window_p95_ms": 80.236,
+      "windows_above_2s_p95": 0,
+      "scale_actions": 34,
+      "csv": "legitimate_flash_reactive_seed1.csv"
+    }
+  ]
+}
